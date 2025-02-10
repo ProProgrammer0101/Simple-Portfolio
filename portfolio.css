@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-color-fir: #003366;
+  --bg-color-sec: #000000;
+}
+
+body {
+  /* ... your existing styles ... */
+  background-image: radial-gradient(var(--bg-color-fir), var(--bg-color-sec));
+  background-size: cover; /* Or 100% 100%, or cover with background-position */
+  background-repeat: no-repeat; 
+  background-attachment: fixed;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  text-align: center;
+  color: white;
+  height: 80vh;
+}
+
+.profilePic > img {
+  width: 200px;
+  height: auto;
+  border-radius: 50%;
+  margin-top: 20px;
+  position: relative;
+}
+
+.texts {
+  margin-top: 10px;
+  font-size: 1.5rem;
+  font-family: poppins;
+}
+
+.gradient-text {
+  background: linear-gradient(to right, #2bffff, #00ffab, #8f00ff, #2bffff);
+  background-size: 300% auto;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animated-gradient 10s linear infinite;
+  text-transform: uppercase;
+  letter-spacing:       3px;
+}
+
+@keyframes animated-gradient {
+  to {
+    background-position: 300% center;
+  }
+}
+
+.changing-text {
+  letter-spacing: 2px;
+  font-family: 'Smooch Sans';
+  font-size: 1.4em;
+}

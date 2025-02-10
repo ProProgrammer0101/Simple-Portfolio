@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page title</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jersey+15&family=Oswald:wght@200..700&family=Smooch+Sans:wght@100..900&display=swap" rel="stylesheet">
+  <!-- Poppins, Oswald, Jersey 15, Smooch Sans -->
+  <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+  
+  <header>
+    
+  </header>
+  
+  <main>
+    
+    <div class="profilePic-container">
+      <div class="profilePic">
+        <img src="photos/profilePic.jpeg" alt="Profile Picture">
+      </div>
+    </div>
+    
+    <div class="texts">
+      <h1>Hello, world!</h1>
+      <h2>Itz<br> <span class="gradient-text">Srestho</span></h2>
+      
+      <p>I'm a</p>
+      <div class="changing-text">
+        <p><div id="typewriter-text"></div></p>
+      </div>
+      
+    </div>
+    
+  </main>
+  
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script>
+  var options = {
+    strings: ["Web Developer", "Future Game Developer", "Designer", "Gamer", "CEO"],
+    typeSpeed: 50,
+    backSpeed: 50,
+    backDelay: 1500,
+    startDelay: 1000,
+    loop: true
+  };
+
+  var typed = new Typed("#typewriter-text", options);
+</script>
+  
+</body>
+</html>
